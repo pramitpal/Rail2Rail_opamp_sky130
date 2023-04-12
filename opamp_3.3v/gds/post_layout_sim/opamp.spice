@@ -1,44 +1,45 @@
 * SPICE3 file created from opamp.ext - technology: sky130A
 
-.subckt opamp PLUS VB1 OUT VDD GND
+.subckt opamp OUT VIN VDD GND
 X0 a_1549_3140# a_550_1291# VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
 X1 OUT a_1987_304# GND GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.29 as=0.87 ps=6.29 w=6 l=0.5
 X2 GND a_1987_304# OUT GND sky130_fd_pr__nfet_g5v0d10v5 ad=1.74 pd=12.58 as=0.87 ps=6.29 w=6 l=0.5
 X3 a_925_2276# a_925_2276# GND GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
 X4 a_1095_1321# OUT a_937_1321# GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=0.5
-X5 a_1987_304# VB1 a_1253_1321# w_1414_228# sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+X5 a_1987_304# a_n804_1718# a_1253_1321# w_1414_228# sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
 X6 GND a_1987_304# OUT GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.29 as=0.87 ps=6.29 w=6 l=0.5
 X7 a_925_2276# a_550_1291# VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.5
 X8 GND a_925_2276# a_1392_2207# GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=0.5
 R0 GND a_550_1291# sky130_fd_pr__res_generic_po w=0.33 l=65.24
-X9 a_1708_2207# PLUS a_1549_3140# VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.5
+X9 a_1708_2207# VIN a_1549_3140# VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.5
 X10 VDD a_2388_2119# OUT VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=0.5
 X11 a_1549_3140# OUT a_1392_2207# VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.5
-X12 a_1253_1321# PLUS a_1095_1321# GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=0.5
+X12 a_1253_1321# VIN a_1095_1321# GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=0.5
 X13 a_1095_1321# a_925_2276# GND GND sky130_fd_pr__nfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=0.5
 X14 OUT a_1987_304# GND GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.29 as=1.74 ps=12.58 w=6 l=0.5
 X15 VDD a_2168_2788# a_2168_2788# VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.5
-X16 a_937_1321# VB1 a_1488_294# w_1414_228# sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+X16 a_937_1321# a_n804_1718# a_1488_294# w_1414_228# sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
 X17 OUT a_2388_2119# VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=0.5
 X18 a_1253_1321# a_550_1291# VDD w_1414_228# sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.5
-X19 a_2168_2788# VB1 a_1392_2207# GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
-X20 a_1708_2207# VB1 a_2388_2119# GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+X19 a_2168_2788# a_n804_1718# a_1392_2207# GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+X20 a_1708_2207# a_n804_1718# a_2388_2119# GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+R1 a_n804_1718# VDD sky130_fd_pr__res_generic_po w=0.33 l=38.47
 X21 VDD a_550_1291# a_937_1321# w_1414_228# sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.5
 X22 VDD a_550_1291# a_550_1291# VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.5
 X23 OUT a_2388_2119# VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=0.5
 X24 VDD a_2388_2119# OUT VDD sky130_fd_pr__pfet_g5v0d10v5 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=0.5
 X25 a_1708_2207# a_925_2276# GND GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=0.5
 X26 GND a_1488_294# a_1488_294# GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=0.5
+R2 GND a_n804_1718# sky130_fd_pr__res_generic_po w=0.33 l=23.56
 X27 a_1987_304# a_1488_294# GND GND sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=0.5
 X28 a_2388_2119# a_2168_2788# VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.5
 .ends
 
+x1 OUT VIN VDD GND opamp
 
-x1 PLUS VB1 OUT VDD GND opamp
-
-V1 PLUS GND sine(1.65 1.8 100)
+V1 VIN GND sine(1.65 1.8 100)
 V3 VDD GND 3.3
-V4 VB1 GND 1.25
+
 **** begin user architecture code
 
 .param mc_mm_switch=0
@@ -56,5 +57,5 @@ V4 VB1 GND 1.25
 run
 
 *For Transient Analysis
-plot OUT PLUS vdd
+plot OUT VIN VDD
 .endc
