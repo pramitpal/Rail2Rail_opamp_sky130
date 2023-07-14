@@ -1,0 +1,28 @@
+** sch_path: /foss/designs/8_bit_dac/All_layouts/Layout_v2/All_schematic/opamp_test/opamp.sch
+
+.lib "/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.tt.red" tt
+.include "opamp.ext.spice"
+
+
+* This is a simulation to find the DC gain of an opamp.
+* The opamp is modeled as a two-port device.
+* The DC gain is calculated using the transfer function analysis.
+
+X1 VIN VOUT VSSA VDDA opamp
+C1 VOUT 0 5p
+
+V1 VSSA 0 dc 0
+V2 VDDA 0 dc 3.3
+V3 VIN 0 1.65 ac 1
+
+.control
+set filetype=ascii
+tf V(VOUT,0) V3
+print all
+
+*write opamp_tf.raw all
+quit
+
+
+.endc
+.end

@@ -1,0 +1,32 @@
+** sch_path: /foss/designs/8_bit_dac/All_layouts/Layout_v2/All_schematic/opamp_test/opamp.sch
+
+.lib "/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.tt.red" tt
+.include "opamp.ext.spice"
+
+X1 VIN VOUT VSSA VDDA opamp
+C1 VOUT 0 5p
+
+V1 VSSA 0 dc 0
+V2 VDDA 0 dc 3.3
+******************************************************
+Vin VIN 0 PWL(0 0 1u 0 1.0001u 2)
+
+.tran 1n 10u uic
+
+.control
+set color0 = white
+run
+
+plot vin vout xlimit 0.98u 1.15u ylimit 0 3.3
+****************measuring settling_time***************
+let vhi = 1.5
+let vlo = 1.0
+meas tran t2 WHEN v(vout)=vhi CROSS=LAST
+meas tran t1 WHEN v(vout)=vlo CROSS=LAST
+let slew_rate = ((vhi-vlo)/(t2-t1))/1e6
+******************************************************
+print slew_rate
+
+.endc
+
+.end

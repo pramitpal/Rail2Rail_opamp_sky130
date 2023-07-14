@@ -1,0 +1,38 @@
+** sch_path: /foss/designs/8_bit_dac/All_layouts/Layout_v2/All_schematic/opamp_test/opamp.sch
+
+.lib "/foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice.tt.red" tt
+.include "opamp.ext.spice"
+
+X1 VIN VOUT VSSA VDDA opamp
+C1 VOUT 0 100p
+*******DC supply******************
+V1 VDDA 0 dc 3.3
+V2 VSSA 0 dc 0
+
+*******AC analysis AC Source******
+V3 vin 0 dc 1.65 ac 1
+
+.control
+set color0 = white
+******AC Command*****
+ac dec 100 1 100G
+
+
+
+********Magnitude dB plot for v(vout) on log scale
+plot vdb(vout) xlog
+
+********Phase degrees plot for v(vout) on log scale
+let outd = 57.29*vp(vout)
+settype phase outd
+plot outd xlimit 1 1G ylabel 'phase'
+
+********Phase margin plot on log scale
+let pm = outd + 180
+settype phase pm
+plot pm xlimit 1 1G ylabel 'Phase Margin'
+ 		
+.endc
+
+.end
+

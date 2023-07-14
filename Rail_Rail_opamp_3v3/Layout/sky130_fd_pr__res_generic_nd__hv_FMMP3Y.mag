@@ -1,0 +1,37 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1686987678
+<< error_p >>
+rect -258 -473 -174 -370
+rect 174 -473 258 -370
+<< mvndiff >>
+rect -258 -427 -174 -370
+rect -258 -461 -246 -427
+rect -186 -461 -174 -427
+rect -258 -473 -174 -461
+rect 174 -427 258 -370
+rect 174 -461 186 -427
+rect 246 -461 258 -427
+rect 174 -473 258 -461
+<< mvndiffc >>
+rect -246 -461 -186 -427
+rect 186 -461 246 -427
+<< mvndiffres >>
+rect -258 390 -30 474
+rect -258 -370 -174 390
+rect -114 -242 -30 390
+rect 30 390 258 474
+rect 30 -242 114 390
+rect -114 -326 114 -242
+rect 174 -370 258 390
+<< locali >>
+rect -262 -461 -246 -427
+rect -186 -461 -170 -427
+rect 170 -461 186 -427
+rect 246 -461 262 -427
+<< properties >>
+string gencell sky130_fd_pr__res_generic_nd__hv
+string library sky130
+string parameters w 0.42 l 4.0 m 1 nx 4 wmin 0.42 lmin 2.10 rho 120 val 5.52k dummy 0 dw 0.02 term 0.0 sterm 0.0 caplen 0.4 snake 1 guard 0 glc 1 grc 1 gtc 1 gbc 1 roverlap 0 endcov 100 full_metal 1 vias 1 viagb 0 viagt 0 viagl 0 viagr 0
+<< end >>
