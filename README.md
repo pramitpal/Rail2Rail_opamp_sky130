@@ -32,7 +32,7 @@ As you can see the pre-layout and post layout simulations are identical.
 
 ## Rail-to-Rail opamp 3.3v supply version
 The schematic for the 3.3v version is shown below
-![img](/Rail2Rail_opamp_3.3v/schematic/schematic.png)
+![img](/Rail_Rail_opamp_3v3/Schematic/opamp_schematic.svg)
 The pre-layout simulation waveform and Vin vs Vout characteristics isshown in the figure below
 ![img](/Rail2Rail_opamp_3.3v/schematic/pre-layout.png)
 
