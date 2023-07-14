@@ -9,28 +9,7 @@ The SkyWater Open Source PDK is a collaboration between Google and SkyWater Tech
 
 The SkyWater Open Source PDK documentation can be found at <https://skywater-pdk.rtfd.io>
 
-## Rail-to-Rail opamp 1.8v supply version
-The schematic for the 1.8v version is shown below
-![img](/Rail2Rail_opamp_1.8v/schematic/Screenshot%20from%202023-03-12%2006-44-59.png)
-The pre-layout simulation waveform and Vin vs Vout characteristics isshown in the figure below
-![img](/Rail2Rail_opamp_1.8v/schematic/Screenshot%20from%202023-03-12%2006-45-55.png)
-
-To draw the layout using magic VLSI tool. it needs to be invoked by
-```
-magic -rcfile sky130A.magicrc -d XR
-```
-The layout for 1.8v version
-
-![img](/Rail2Rail_opamp_1.8v/manual_layout_working/Screenshot%20from%202023-03-12%2006-39-41.png)
-
-
-The postlayout simulation waveform
-
-![img](/Rail2Rail_opamp_1.8v/manual_layout_working/Screenshot%20from%202023-03-12%2006-41-28.png)
-
-As you can see the pre-layout and post layout simulations are identical.
-
-## Rail-to-Rail opamp 3.3v supply version
+## Rail-to-Rail opamp 3.3v
 The schematic for the 3.3v version is shown below
 ![img](/Rail_Rail_opamp_3v3/Schematic/opamp_schematic.svg)
 The pre-layout simulation waveform and Vin vs Vout characteristics isshown in the figure below
