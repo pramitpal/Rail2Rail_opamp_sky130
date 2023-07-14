@@ -42,7 +42,7 @@ magic -rcfile sky130A.magicrc -d XR
 ```
 The layout for 3.3v version
 
-![img](/Rail2Rail_opamp_3.3v/gds/opamp_layout.svg)
+![img](/Rail_Rail_opamp_3v3/Layout/opamp_layout.png)
 
 
 The postlayout simulation waveform
